@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 7%;
+    font-size: 30px;
+    background: rgb(27, 27, 27);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 30px;
+    color:rgb(187, 0, 187);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 18px;
+    color:rgb(187, 0, 187);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 35px;
+}
+
+.navbar a:hover{
+    color: rgb(255, 187, 255);
+    transition: .35s;
+}
+
+body {
+    background-image: url("assets/website-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* .classeaqui.mouseoverEffect {
+    display: inline-block;
+} */
+
+/* THIS IS THE LINE FULL OF DOTS ON THE SIDE! */
+.section-side-dot-line {
+    margin-top: -26%;
+    margin-bottom: -5920px;
+    margin-left: 7%;
+    margin-right: 92.4%;
+    padding-bottom: 40px;
+}
+
+.side-dot-line {
+    background-color: rgba(255, 0, 255, 0.4);
+    border-radius: 15px;
+    font-size: 27px;
+    color: rgb(255, 255, 255);
+}
+
+/* ------------------------------------------ */
+
+.section-1 {
+    padding-top: 10%;
+}
+
+.section-1-div-1 {
+    display: flex;
+    align-items: center;
+    gap: 20%;
+}
+
+.section-1-div-1 h1 {
+    margin-top: -10%;
+    margin-left: 180px;
+    font-weight: 500;
+    line-height: 100px;
+    font-size: 87px;
+    color: ghostwhite;
+}
+
+.section-1-div-1 img {
+    width: 600px;
+    border-radius: 300px;
+    opacity: 1;
+    transition: 2.5s ease-out;
+}
+
+.section-1-div-1 img:hover {
+    opacity: 0.0;
+    border-radius: 0px;
+    transition: 0.2s ease-in;
+}
+
+.section-2 {
+    margin-left: 180px;
+    margin-top: -10%;
+    align-items: center;
+    color: ghostwhite;
+    font-size: 70px;
+    font-weight: 300;
+}
+
+/* ------------------------------ ANIMATION TYPYING TEXT COMPLETE EFFECT ------------------------------ */
+
+.animated-text{
+    font-size: 80px;
+    font-weight: 600;
+    min-width: 280px;
+    background-color: black;
+    margin-right: 50%;
+    white-space: nowrap;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.animated-text span {
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "";
+    color: rgb(187, 0, 187);
+    animation: words 20s infinite;
+}
+
+.animated-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: black;
+    border-left: 2px solid rgb(255, 255, 255);
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(30) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 5px solid rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes words {
+    0%, 20%{
+        content: "me chamo Felipe";
+    }
+    21%, 40%{
+        content: "curso ADS na Fatec";
+    }
+    41%, 60%{
+        content: "estou na busca por um estágio";
+    }
+    61%, 80%{
+        content: "curto jogar FPS";
+    }
+    81%, 100%{
+        content: "adoro ler";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+
+
+
+.section-3 {
+    background-color: transparent;
+}
+
+.section-3-div-1 {
+    background-color: black;
+    font-size: 43px;
+    font-weight: 300;
+    color: ghostwhite;
+    padding-left: 180px;
+    padding-bottom: 7%;
+}
+
+.section-3-div-1 p {
+    background-color: rgba(255, 0, 255, 0.15);
+    margin-right: 10%;
+    padding: 4%;
+    text-align: center;
+}
+
+.section-3-div-1 h1 {
+    padding-top: 40px;
+}
+
+.hobbies-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 23px;
+}
+
+.section-4 {
+    background-color: rgba(248, 248, 255, 0.4);
+    padding-bottom: 6.7%;
+}
+
+.section-4 h1 {
+    text-align: center;
+    font-size: 87px;
+    color: ghostwhite;
+    background-color: rgb(187, 0, 187);
+}
+
+.section-4-div-1 img {
+    display: inline-table;
+    align-items: center;
+    padding-top: 7%;
+    margin-left: 180px;
+}
+
+.section-5 {
+    background-color: rgba(248, 248, 255, 0.4);
+    padding-bottom: 3%;
+}
+
+.section-5 h1 {
+    text-align: center;
+    font-size: 87px;
+    color: ghostwhite;
+    background-color: rgb(0, 0, 0);
+}
+
+.section-5-div-1 {
+    padding-left: 25%;
+    padding-bottom: 1%;
+}
+
+.section-5-div-1 li{
+    padding-top: 4%;
+    font-size: 50px;
+    padding-left: 180px;
+    font-weight: 500;
+}
+
+.section-6 {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.section-6 h1 {
+    padding-top: 1%;
+    text-align: center;
+    font-size: 87px;
+    color: ghostwhite;
+}
+
+.section-6 p {
+    color: ghostwhite;
+    text-align: center;
+    font-size: 50px;
+    padding: 4%;
+}
